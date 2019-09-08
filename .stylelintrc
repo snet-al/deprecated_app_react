@@ -1,8 +1,5 @@
 {
     "extends": "stylelint-config-recommended",
-    "ignoreFiles": [
-        "./src/tailwind.css"
-    ],
     "rules": {
             "at-rule-no-unknown": [ true, {
                 "ignoreAtRules": [
