@@ -1,0 +1,46 @@
+.Aside {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  max-width: 20rem;
+  width: 80%;
+  transform: translateX(-100%);
+}
+
+.Aside-enter-active {
+  animation: openDrawer 0.3s ease-out forwards;
+}
+
+.Aside-enter-done {
+  transform: translateX(0);
+}
+
+.Aside-exit-active {
+  animation: closeDrawer 0.3s ease-out forwards;
+}
+
+.Aside-exit-done {
+  transform: translateX(-100%);
+}
+
+@keyframes openDrawer {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes closeDrawer {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}

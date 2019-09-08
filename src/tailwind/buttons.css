@@ -1,0 +1,130 @@
+@define-mixin size-default {
+  @apply h-10 py-2 px-4 text-sm;
+}
+
+/**
+ * * Base button class, can add the other button style classes (i.e. btn-primary) for coloring. 
+ */
+.btn {
+  @apply relative;
+  @apply max-w-full;
+  @apply inline-flex;
+  @apply rounded-sm;
+  @apply outline-none;
+  @apply justify-center;
+  @apply items-center;
+  @apply align-middle;
+  @apply select-none;
+  @apply font-medium;
+  @mixin size-default;
+}
+
+/**
+ * * Button sizes
+ */
+.btn.btn-default {
+  @mixin size-default;
+}
+
+.btn.btn-xs {
+  @apply h-6 py-0 px-2 text-2xs;
+}
+
+.btn.btn-sm {
+  @apply h-8 py-1 px-3 text-xs;
+}
+
+.btn.btn-lg {
+  @apply h-12 py-2 px-6 text-sm;
+}
+
+.btn.btn-xl {
+  @apply h-14 py-2 px-8 text-base;
+}
+
+.btn.btn-action {
+  @apply p-2 !important;
+}
+
+/**
+ * * Button takes all available width
+ */
+
+.btn.block {
+  @apply block w-full;
+}
+
+/**
+ * * Button styles
+ */
+.btn.btn-primary {
+  @apply bg-primary-500 text-white;
+
+  &:hover {
+    @apply bg-primary-700;
+  }
+}
+
+.btn.btn-secondary {
+  @apply bg-secondary-500 text-white;
+
+  &:hover {
+    @apply bg-secondary-700;
+  }
+}
+
+.btn.btn-success {
+  @apply bg-success-500 text-white;
+
+  &:hover {
+    @apply bg-success-700;
+  }
+}
+
+.btn.btn-danger {
+  @apply bg-danger-500 text-white;
+
+  &:hover {
+    @apply bg-danger-700;
+  }
+}
+
+.btn.btn-gray {
+  @apply bg-gray-400 text-gray-800;
+
+  &:hover {
+    @apply bg-gray-600;
+  }
+}
+
+.btn.btn-outline-primary {
+  @apply bg-white text-primary-500 border border-primary-500;
+
+  &:hover {
+    @apply bg-primary-100;
+  }
+}
+
+.btn.btn-outline-secondary {
+  @apply bg-white text-secondary-500 border border-secondary-500;
+
+  &:hover {
+    @apply bg-secondary-100;
+  }
+}
+
+.btn.btn-outline-success {
+  @apply bg-white text-success-500 border border-success-500;
+
+  &:hover {
+    @apply bg-success-100;
+  }
+}
+
+.btn.btn-outline-danger {
+  @apply bg-white text-danger-500 border border-danger-500;
+
+  &:hover {
+    @apply bg-danger-100;
+  }
+}

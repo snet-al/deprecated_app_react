@@ -1,0 +1,15 @@
+.card {
+  @apply border border-gray-700 rounded-sm text-left;
+}
+
+.card-title {
+  @apply border-b border-gray-700 rounded-sm py-4 px-8;
+}
+
+.card-body {
+  @apply p-8 text-justify;
+}
+
+.card-actions {
+  @apply border-t border-gray-700 rounded-sm p-4 flex justify-end;
+}
