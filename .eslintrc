@@ -1,0 +1,44 @@
+{
+  "env": {
+    "jest": true
+  },
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "no-underscore-dangle": 0,
+    "no-nested-ternary": "off",
+    "no-trailing-spaces": "warn",
+    "no-use-before-define": ["error", { "functions": false, "classes": true }],
+    "comma-dangle": "warn",
+    "no-console": "off",
+    "object-shorthand": "warn",
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": "off",
+    "react/state-in-constructor": "off",
+    "import/imports-first": ["error", "absolute-first"],
+    "import/prefer-default-export": "off",
+    "import/newline-after-import": "error",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecorators": true
+    }
+  }
+}
